@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
+const authRoute = require('./routes/auth');
 
 dotenv.config();
 
@@ -13,6 +14,8 @@ mongoose
   })
   .then(console.log('Database Connected ...'))
   .catch((err) => console.log(err));
+
+app.use('/api/auth', authRoute);
 
 app.listen('8000', () => {
   console.log('Server is running ...');
