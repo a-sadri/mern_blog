@@ -3,7 +3,7 @@ import './post.css';
 export default function Post() {
   return (
     <div className='post'>
-      <img clasName='postImg' src='https://picsum.photos/1000/500' alt='' />
+      <img className='postImg' src='https://picsum.photos/400/280' alt='' />
       <div className='postInfo'>
         <div className='postCats'>
           <span className='postCat'>Music</span>
