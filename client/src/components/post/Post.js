@@ -13,6 +13,19 @@ export default function Post() {
         <hr />
         <span className='postDate'>1 hour ago</span>
       </div>
+      <p className='postDesc'>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum harum,
+        voluptatem labore repellat aliquam ducimus corrupti. Maiores,
+        consequuntur dolorem ex veniam, similique accusantium quas doloremque
+        incidunt perspiciatis natus unde sit. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Ipsum harum, voluptatem labore repellat
+        aliquam ducimus corrupti. Maiores, consequuntur dolorem ex veniam,
+        similique accusantium quas doloremque incidunt perspiciatis natus unde
+        sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+        harum, voluptatem labore repellat aliquam ducimus corrupti. Maiores,
+        consequuntur dolorem ex veniam, similique accusantium quas doloremque
+        incidunt perspiciatis natus unde sit.
+      </p>
     </div>
   );
 }
