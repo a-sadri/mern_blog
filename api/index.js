@@ -5,9 +5,10 @@ const mongoose = require('mongoose');
 const authRoute = require('./routes/auth');
 
 dotenv.config();
+app.use(express.json());
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect('mongodb://localhost:27017/blog', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -17,6 +18,7 @@ mongoose
 
 app.use('/api/auth', authRoute);
 
-app.listen('8000', () => {
-  console.log('Server is running ...');
+port = process.env.port || 5000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port} ...`);
 });
