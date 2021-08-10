@@ -45,13 +45,13 @@ export default function TopBar() {
           <img className='topImage' src='https://picsum.photos/40/40' alt='' />
         ) : (
           <ul className='topList'>
-            <li>
-              <Link to='/' className='link'>
+            <li className='topListItem'>
+              <Link to='/login' className='link'>
                 Login
               </Link>
             </li>
-            <li>
-              <Link to='/' className='link'>
+            <li className='topListItem'>
+              <Link to='/register' className='link'>
                 Register
               </Link>
             </li>
